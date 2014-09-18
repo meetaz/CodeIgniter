@@ -40,7 +40,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+$config['base_url']	= 'https://clipper.encs.concordia.ca/cgi-bin/cgiwrap/cfc353_2/CodeIgniter/';
 
 /*
 |--------------------------------------------------------------------------

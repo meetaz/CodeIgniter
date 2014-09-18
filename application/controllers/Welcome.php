@@ -45,7 +45,11 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$test = $this->load->database();
+		$data = [];
+		$data['dbTest'] = implode($this->db->list_tables(), ' ');
+		$this->db->close();
+		$this->load->view('welcome_message', $data);
 	}
 }
 
